@@ -24,4 +24,3 @@ variable "aws_access_key" {
 variable "aws_secret_key" {
         default = "WL83Ire+/HcDZYVTlnaWFaSvillMxw0r7ub9T5U/"
 }
-
