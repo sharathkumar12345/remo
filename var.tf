@@ -19,8 +19,8 @@ variable "key_name" {
 }
 
 variable "aws_access_key" {
-        default = "AKIAIUTA67ZUEQ2ZV7AA"
+        default = "AKIAIROYJMMWNY2J5WLQ"
 }
 variable "aws_secret_key" {
-        default = "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"
+        default = "zLk9GQU6wEe9WAT5Y6rxN11yS/hunoOygI3pFffc"
 }
