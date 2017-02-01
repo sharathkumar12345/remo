@@ -1,5 +1,4 @@
-
-                                   resource "aws_vpc" "terraform" {
+ resource "aws_vpc" "terraform" {
      cidr_block = "10.100.0.0/16"
 }
 
