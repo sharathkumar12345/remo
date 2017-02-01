@@ -1,4 +1,5 @@
-resource "aws_vpc" "terraform" {
+
+                                   resource "aws_vpc" "terraform" {
      cidr_block = "10.100.0.0/16"
 }
 
@@ -21,13 +22,6 @@ resource "aws_internet_gateway" "igw" {
     }
 }
 resource "aws_security_group" "Terraform_SG" {
-vpc_id = "${aws_vpc.terraform.id}"
-
-    tags {
-        Name = "Terraform igw"
-    }
-}
-resource "aws_security_group" "Terraform_SG" {
   name = "Terraform_SG"
   description = "SG allocation"
   vpc_id = "${aws_vpc.terraform.id}"
@@ -43,7 +37,7 @@ resource "aws_security_group" "Terraform_SG" {
       to_port = 80
       protocol = "tcp"
       cidr_blocks = ["0.0.0.0/0"]
- }
+  }
 egress {
       from_port = 0
       to_port = 0
@@ -63,4 +57,3 @@ resource "aws_instance" "web01" {
     }
 
 }
-                                   
